@@ -1,3 +1,4 @@
+                            <!-- BY YASSINE ENNATIQI -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,40 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <div class="screen">
-            </div>
-            <div class="row">
-                <div class="numbers operator"><b>AC</b></div>
-                <div class="numbers operator"><b>del</b></div>
-                <div class="numbers operator"><b>x</b></div>
-                <div class="numbers operator"><b>%</b></div>
-            </div>
-            <div class="row">
-                <div class="numbers"><b>1</b></div>
-                <div class="numbers"><b>2</b></div>
-                <div class="numbers"><b>3</b></div>
-                <div class="numbers operator"><b>*</b></div>
-            </div>
-            <div class="row">
-                <div class="numbers"><b>4</b></div>
-                <div class="numbers"><b>5</b></div>
-                <div class="numbers"><b>6</b></div>
-                <div class="numbers operator"><b>-</b></div>
-            </div>
-            <div class="row">
-                <div class="numbers"><b>7</b></div>
-                <div class="numbers"><b>8</b></div>
-                <div class="numbers"><b>9</b></div>
-                <div class="numbers operator"><b>+</b></div>
-            </div>
-            <div class="row">
-                <div class="numbers"><b>0</b></div>
-                <div class="numbers"><b>.</b></div>
-                <div class="numbers equal"><b>=</b></div>
-            </div>
+    <div class="calculator">
+        <input class="screen" id="screen" readonly>
+        <div class="row">
+            <div class=" operator" onclick="cleear()"><b>AC</b></div>
+
+            <div class=" operator" onclick="append('/')"><b>%</b></div>
+        </div>
+        <div class="row">
+            <div class="numbers" onclick="append('1')"><b>1</b></div>
+            <div class="numbers" onclick="append('2')"><b>2</b></div>
+            <div class="numbers" onclick="append('3')"><b>3</b></div>
+            <div class="operator" onclick="append('*')"><b>*</b></div>
+        </div>
+        <div class="row">
+            <div class="numbers" onclick="append('4')"><b>4</b></div>
+            <div class="numbers" onclick="append('5')"><b>5</b></div>
+            <div class="numbers" onclick="append('6')"><b>6</b></div>
+            <div class=" operator" onclick="append('-')"><b>-</b></div>
+        </div>
+        <div class="row">
+            <div class="numbers" onclick="append('7')"><b>7</b></div>
+            <div class="numbers" onclick="append('8')"><b>8</b></div>
+            <div class="numbers" onclick="append('9')"><b>9</b></div>
+            <div class=" operator" onclick="append('+')"><b>+</b></div>
+        </div>
+        <div class="row">
+            <div class="numbers" onclick="append('0')" ><b>0</b></div>
+            <div class="numbers" onclick="append('.')" ><b>.</b></div>
+            <div class="equal" onclick="equal()"><b>=</b></div>
         </div>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
